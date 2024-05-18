@@ -1,17 +1,16 @@
+#Grade calculator by Chris K
 def calculate_average_grade():
-    # Prompt the user for their name and store it in the student_name variable
-    student_name = ""
-
-    # Prompt the user for their scores in Math, Science, and English
-    # Store the scores in the respective variables: math_score, science_score, english_score
-    math_score = 0
-    science_score = 0
-    english_score = 0
-
-    # Calculate the average grade
-    average_grade = 0
-
-    # Return the student's name and their average grade
+#Student info inputs (with float conversion)
+    student_name = input("Hi! What's your name?")
+    math_score = float(input(f"Nice to meet you, {student_name}, what's your math score?"))
+    english_score = float(input("Awesome! What's your English score?"))
+    science_score = float(input("Great Job! What's your science score?"))
+#Equation to calculate grade and store it as a variable
+    average_grade = ((math_score+english_score+science_score)/3.0)
+#Formatting grade
+ 
+#Ouput
+    print(f"{student_name}, {average_grade}")
     return student_name, average_grade
 
 if __name__ == '__main__':
